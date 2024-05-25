@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 2.0</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/progressbar.css">
+    <link rel="stylesheet" href="css/typing.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/ECF.png" alt="logo">
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="navbar">
+            <a href="#home" class="navlink active">Home</a>
+            <a href="#skills" class="navlink">Skills</a>
+            <a href="#projects" class="navlink">Projects</a>
+            <a href="#contact" class="navlink">Contact</a>
+        </nav>
+    </header>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <div class="top-section" id="home">
+        <div class="about">
+            <div class="about-content">
+                <h1>Hello, I'm Emily.</h1>
+                <h2>Frontend Developer.</h2>
+                <p>By day, I work as an assistant general manager, overseeing operations and
+                    ensuring smooth workflow. However, as the sun sets, I transition into my role as a frontend developer, immersing
+                    myself in the world of coding and design.
+                </p>
+                <p>I'm a tech enthusiast through and through! You'll often find me eagerly embracing the latest gadgets and gizmos, like
+                    a kid in a candy store. </p>
+                <p>Graduate from Noroff School of technology and digital media May 2024.</p>
+            </div>
+            <div class="icon">
+                <a href="https://github.com/Emii91"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/emily-cooke-frantzen-89a2691b6"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+        </div>
+    </div>
+    <section class="typing" id="skills">
+        <div class="wrapper">
+            <div class="static-text">I'm working with</div>
+            <ul class="dynamic-text">
+                <li><span>HTML & CSS</span></li>
+                <li><span>JAVASCRIPT</span></li>
+                <li><span>REACT</span></li>
+                <li><span>BOOTSTRAP</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="skill" >
+        <h2 class="heading">Coding <span>Skills</span></h2>
+        <div class="skills-row">
+            <div class="skills-column">
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>HTML <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>CSS <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Javascript <span>60%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>React <span>60%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="project-text" id="projects">
+        <h3>My latest <span>projects</span></h3>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="face front">
+                <img src="images/sp2 new.png" alt="Semester project">
+            </div>
+            <div class="face back">
+                <h3>Semester Project</h3>
+                <p>An auction website where users can add items to be bid on and bid on items other users have put up for auction.</p>
+                <div class="card-btn">
+                    <a href="#"><button class="btn-detail">Github</button></a>
+                    <a href="#"><button class="btn-detail">Live page</button></a>
+                </div>
+
+                <div class="link">
+                    <a href="semester.html">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="images/JS Framework1.png" alt="Semester project">
+            </div>
+            <div class="face back">
+                <h3>Javascript Framwork</h3>
+                <p>ON this project we were fousing on our knowledge of React, and had to build an eCom store.</p>
+                <div class="card-btn">
+                    <a href="#"><button class="btn-detail">Github</button></a>
+                    <a href="#"><button class="btn-detail">Live page</button></a>
+                </div>
+                <div class="link">
+                    <a href="jsframework.html">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="images/Exam.png" alt="Semester project">
+            </div>
+            <div class="face back">
+                <h3>Project Exam</h3>
+                <p>An existing Social Media company wants a brand new front end for their application. While they
+                    have a list of required features, the design and user experience has not been specified.</p>
+                <div class="card-btn">
+                    <a href="#"><button class="btn-detail">Github</button></a>
+                    <a href="#"><button class="btn-detail">Live page</button></a>
+                </div>
+
+                <div class="link">
+                    <a href="exam.html">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; | 2024 Emily C.F</p>
+        </div>
+        <div class="footer-icon">
+            <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

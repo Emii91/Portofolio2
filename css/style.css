@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.top-section {
+  background: #1f242e;
+}
+
+.about {
+  height: 100vh;
+  background: url(/images/nobck.png) no-repeat;
+  background-size: 600px;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  background-position: right;
+}
+
+.about-content {
+  max-width: 500px;
+  position: relative;
+  top: calc(50vh- 50px);
+}
+
+.about-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: white;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #cca085;
+}
+
+.about-content p {
+  font-size: 16px;
+  color: white;
+  padding: 18px 0px;
+}
+
+.about-hover {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 700px;
+  height: 100%;
+  background: transparent;
+  transition: 3s;
+}
+
+.about-hover:hover {
+  background: #1f242e;
+  opacity: 0.8;
+}
+
+.icon {
+  position: absolute;
+  bottom: 150px;
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50%;
+  border: 0.2rem solid #cca085;
+  font-size: 20px;
+  color: white;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.icon a::before {
+  content: "";
+  position: absolute;
+  background: #cca085;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.icon a:hover::before {
+  width: 100%;
+}
+
+/* Timeline */
+
+.timeline {
+  position: fixed;
+  top: calc(40vh + 50px);
+  width: 2px;
+  height: 100vh;
+  background-color: #1f242e;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.content {
+  margin-top: 300px;
+}
+
+/* Buttons */
+
+.links a button {
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: white;
+  border: 0.2rem solid #cca085;
+  background-size: 400%;
+  border-radius: 30px;
+}
+
+.links a button:hover {
+  background: #cca085;
+  transition: 0.5s;
+  color: white;
+}

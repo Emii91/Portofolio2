@@ -1,0 +1,112 @@
+.card-container {
+  background: #1f242e;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.project-text h3 {
+  background: #1f242e;
+  font-size: 40px;
+  color: white;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.project-text h3 span {
+  color: #cca085;
+}
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  margin: 100px 0px;
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: transparent;
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 2px 5px 5px #f2f2f2;
+}
+
+.card .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.card .back .link a {
+  color: white;
+}
+
+.card .back .link a:hover {
+  color: #cca085;
+  transition: 0.5s;
+}
+
+.card .back h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.card .back p {
+  letter-spacing: 1px;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+.card-btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-detail {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 8px 20px;
+  border: 1px solid #cca085;
+  background: none;
+  color: white;
+}
+
+.btn-detail:hover {
+  background: #cca085;
+  color: #1f242e;
+  transition: 0.5s;
+}

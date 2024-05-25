@@ -1,0 +1,34 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 9%;
+  background: #2d3443;
+}
+
+.footer-text p {
+  font-size: 16px;
+  color: white;
+}
+
+.footer-icon a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: transparent;
+  border: 2px solid #cca085;
+  border-radius: 6px;
+}
+
+.footer-icon a i {
+  font-size: 24px;
+  color: white;
+}
+
+.footer-icon a:hover {
+  background: #cca085;
+  transition: 0.5s;
+}
