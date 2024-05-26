@@ -1,63 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semester Project 2</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/tab.css">
-
+    <link rel="stylesheet" href="css/footer.css">
 </head>
-
 <body>
-    <div class="container">
-        <div class="tab-box">
-            <button class="tab-btn active">Brief</button>
-            <button class="tab-btn">Requirements</button>
-            <button class="tab-btn">User stories</button>
-            <button class="tab-btn">Technical</button>
-            <div class="line"></div>
-        </div>
-        <div class="content-box">
-            <div class="content-text active">
-                <h2>Brief</h2>
-                <p>To apply knowledge of React to build an eCom store.</p>
+    <a href="index.html"><i class='bx bx-arrow-back'></i></a>
+    <div class="tab">
+        <div class="container">
+            <div class="tab-box">
+                <button class="tab-btn active">Brief</button>
+                <button class="tab-btn">Requirements</button>
+                <button class="tab-btn">User stories</button>
+                <button class="tab-btn">Technical</button>
+                <div class="line"></div>
             </div>
-            <div class="content-text">
-                <h2>Requirements</h2>
-                <ul>
-                    <li>Homepage: List all products with a searchable, filterable list.</li>
-                    <li>Individual Product Page: Display product details, reviews, and add to cart functionality.</li>
-                    <li>Cart Page: List all cart items and display total.</li>
-                    <li>Checkout Success Page: Confirm order success and clear the cart.</li>
-                    <li>Contact Page: Include a validated contact form.</li>
-                </ul>
-            </div>
-            <div class="content-text">
-                <ul>
-                    <li>Header: Navigation bar and Cart icon displaying item count.</li>
-                    <li>Product Card: Displays on Homepage with a "View Product" button.</li>
-                    <li>Homepage: Search bar for product filtering; clicking a product leads to its detailed page.</li>
-                    <li>Product Page: Shows product details, discounted price, and allows adding to cart.</li>
-                    <li>Cart Page: Lists cart items and total; includes a checkout button.</li>
-                    <li>Checkout Success Page: Displays order success message and clears the cart.</li>
-                    <li>Contact Page: Form with validation for full name, subject, email, and message body.</li>
-                </ul>
-            </div>
-            <div class="content-text">
-                <h2>Technical</h2>
-                <ul>
-                    <li>Noroff API</li>
-                    <li>Frontend Framework: React</li>
-                    <li>Routing: React Router for navigation between pages</li>
-                    <li>State Management: React useState and useEffect hooks</li>
-                    <li>Styling: CSS</li>
-                    <li>Hosted on Netlify</li>
-                </ul>
+            <div class="content-box">
+                <div class="content-text active">
+                    <h2>Brief</h2>
+                    <p>To apply knowledge of React to build an eCom store.</p>
+                </div>
+                <div class="content-text">
+                    <h2>Requirements</h2>
+                    <ul>
+                        <li>Homepage: List all products with a searchable, filterable list.</li>
+                        <li>Individual Product Page: Display product details, reviews, and add to cart functionality.
+                        </li>
+                        <li>Cart Page: List all cart items and display total.</li>
+                        <li>Checkout Success Page: Confirm order success and clear the cart.</li>
+                        <li>Contact Page: Include a validated contact form.</li>
+                    </ul>
+                </div>
+                <div class="content-text">
+                    <ul>
+                        <li>Header: Navigation bar and Cart icon displaying item count.</li>
+                        <li>Product Card: Displays on Homepage with a "View Product" button.</li>
+                        <li>Homepage: Search bar for product filtering; clicking a product leads to its detailed page.
+                        </li>
+                        <li>Product Page: Shows product details, discounted price, and allows adding to cart.</li>
+                        <li>Cart Page: Lists cart items and total; includes a checkout button.</li>
+                        <li>Checkout Success Page: Displays order success message and clears the cart.</li>
+                        <li>Contact Page: Form with validation for full name, subject, email, and message body.</li>
+                    </ul>
+                </div>
+                <div class="content-text">
+                    <h2>Technical</h2>
+                    <ul>
+                        <li>Noroff API</li>
+                        <li>Frontend Framework: React</li>
+                        <li>Routing: React Router for navigation between pages</li>
+                        <li>State Management: React useState and useEffect hooks</li>
+                        <li>Styling: CSS</li>
+                        <li>Hosted on Netlify</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; | 2024 Emily C.F</p>
+        </div>
+        <div class="footer-icon">
+            <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
     <script src="js/tab.js"></script>
 </body>
 </html>

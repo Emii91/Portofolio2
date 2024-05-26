@@ -2,38 +2,27 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-}
-
-.top-section {
   background: #1f242e;
 }
 
 .about {
-  height: 100vh;
-  background: url(/images/nobck.png) no-repeat;
-  background-size: 600px;
+  height: 900px;
   display: flex;
   align-items: center;
-  padding: 0 10%;
-  background-position: right;
+  padding: 0 5%;
+  justify-content: space-evenly;
 }
 
 .about-content {
   max-width: 500px;
   position: relative;
-  top: calc(50vh- 50px);
+  z-index: 1;
 }
 
 .about-content h1 {
   font-size: 56px;
   font-weight: 700;
   color: white;
-}
-
-.about-content h2 {
-  font-size: 32px;
-  font-weight: 700;
-  color: #cca085;
 }
 
 .about-content p {
@@ -59,7 +48,6 @@ body {
 
 .icon {
   position: absolute;
-  bottom: 150px;
   width: 110px;
   display: flex;
   justify-content: space-between;
@@ -97,41 +85,30 @@ body {
   width: 100%;
 }
 
-/* Timeline */
-
-.timeline {
-  position: fixed;
-  top: calc(40vh + 50px);
-  width: 2px;
-  height: 100vh;
-  background-color: #1f242e;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 0;
+.type-text {
+  display: inline-block;
 }
 
-.content {
-  margin-top: 300px;
+.text {
+  font-size: 25px;
+  font-weight: 700;
+  color: #cca085;
+  letter-spacing: 5px;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s infinite, cursor 0.4s step-end infinite;
 }
 
-/* Buttons */
-
-.links a button {
-  width: 100px;
-  height: 25px;
-  text-align: center;
-  color: #000;
-  font-size: 16px;
-  text-decoration: none;
-  box-sizing: border-box;
-  background: white;
-  border: 0.2rem solid #cca085;
-  background-size: 400%;
-  border-radius: 30px;
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
 }
 
-.links a button:hover {
-  background: #cca085;
-  transition: 0.5s;
-  color: white;
+@keyframes typing {
+  from {
+    width: 0;
+  }
 }

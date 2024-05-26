@@ -1,9 +1,14 @@
 body {
+  margin: 0;
+}
+
+.tab {
   background-color: #1f242e;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: sans-serif;
 }
 
 .container {
@@ -73,4 +78,62 @@ body {
   background-color: #cca085;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
+}
+
+i.bx.bx-arrow-back {
+  position: absolute;
+  color: white;
+  top: 50px;
+  left: 50px;
+  font-size: 24px;
+  padding: 10px;
+  background: transparent;
+  border: 2px solid #cca085;
+  border-radius: 6px;
+}
+
+i.bx.bx-arrow-back:hover {
+  background: #cca085;
+  transition: 0.5s;
+}
+
+@media (max-width: 585px) {
+  .content-box {
+    padding: 0;
+  }
+  .tab-box .tab-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .line {
+    top: 39px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  .tab-box {
+    flex-direction: column;
+  }
+
+  .tab-box .tab-btn {
+    width: 100%;
+    border-bottom: 1px solid rgba(229, 229, 229, 0.5);
+  }
+
+  .tab-box .tab-btn.active {
+    border-bottom: none;
+  }
+
+  .line {
+    display: none;
+  }
+  .tab-box .tab-btn {
+    padding: 15px;
+    font-size: 16px;
+  }
 }

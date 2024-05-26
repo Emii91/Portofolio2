@@ -55,7 +55,7 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  box-shadow: 2px 5px 5px #f2f2f2;
+  box-shadow: 0 0 10px white;
 }
 
 .card .back .link {
@@ -85,11 +85,15 @@
 
 .card:hover .front {
   transform: perspective(600px) rotateY(180deg);
+  transition: 0.5s ease;
 }
 
 .card:hover .back {
   transform: perspective(600px) rotateY(360deg);
+  transition: 0.5s ease;
 }
+
+/* Buttons */
 
 .card-btn {
   display: flex;
@@ -109,4 +113,24 @@
   background: #cca085;
   color: #1f242e;
   transition: 0.5s;
+}
+
+.links a button {
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: white;
+  border: 0.2rem solid #cca085;
+  background-size: 400%;
+  border-radius: 30px;
+}
+
+.links a button:hover {
+  background: #cca085;
+  transition: 0.5s;
+  color: white;
 }

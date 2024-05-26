@@ -21,6 +21,7 @@
   background: transparent;
   border: 2px solid #cca085;
   border-radius: 6px;
+  text-decoration: none;
 }
 
 .footer-icon a i {

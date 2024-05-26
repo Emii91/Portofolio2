@@ -10,9 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/education.css">
     <link rel="stylesheet" href="css/card.css">
-    <link rel="stylesheet" href="css/progressbar.css">
-    <link rel="stylesheet" href="css/typing.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/media.css">
@@ -25,72 +24,118 @@
         <div class="bx bx-menu" id="menu-icon"></div>
         <nav class="navbar">
             <a href="#home" class="navlink active">Home</a>
+            <a href="#education" class="navlink">Education</a>
             <a href="#skills" class="navlink">Skills</a>
             <a href="#projects" class="navlink">Projects</a>
-            <a href="#contact" class="navlink">Contact</a>
         </nav>
     </header>
-    <div id="progressbar"></div>
+
     <div id="scrollpath"></div>
     <div class="top-section" id="home">
         <div class="about">
+            <div class="about-img">
+                <img src="images/nobck.png" alt="a drawing of me">
+            </div>
             <div class="about-content">
+                
                 <h1>Hello, I'm Emily.</h1>
-                <h2>Frontend Developer.</h2>
+                <div class="type-text">
+                    <h2 class="text">Frontend Developer</h2>
+                </div>
+                
                 <p>By day, I work as an assistant general manager, overseeing operations and
-                    ensuring smooth workflow. However, as the sun sets, I transition into my role as a frontend developer, immersing
+                    ensuring smooth workflow. However, as the sun sets, I transition into my role as a frontend
+                    developer, immersing
                     myself in the world of coding and design.
                 </p>
-                <p>I'm a tech enthusiast through and through! You'll often find me eagerly embracing the latest gadgets and gizmos, like
+                <p>I'm a tech enthusiast through and through! You'll often find me eagerly embracing the latest gadgets
+                    and gizmos, like
                     a kid in a candy store. </p>
-                <p>Graduate from Noroff School of technology and digital media May 2024.</p>
+                    <div class="icon">
+                        <a href="https://github.com/Emii91"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.linkedin.com/in/emily-cooke-frantzen-89a2691b6"><i
+                                class='bx bxl-linkedin-square'></i></a>
+                    </div>
             </div>
-            <div class="icon">
-                <a href="https://github.com/Emii91"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/emily-cooke-frantzen-89a2691b6"><i class='bx bxl-linkedin-square'></i></a>
-            </div>
+
         </div>
     </div>
-    <section class="typing" id="skills">
-        <div class="wrapper">
-            <div class="static-text">I'm working with</div>
-            <ul class="dynamic-text">
-                <li><span>HTML & CSS</span></li>
-                <li><span>JAVASCRIPT</span></li>
-                <li><span>REACT</span></li>
-                <li><span>BOOTSTRAP</span></li>
-            </ul>
-        </div>
-    </section>
+    <section class="education" id="education">
+        <div class="education-container">
+            <h3 class="heading">Education</h3>
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2007-2010</div>
+                    <div class="timeline-content">
+                        <h4>High School, Bjerke videregående skole</h4>
+                        <p>General education/studies</p>
+                    </div>
 
-    <section class="skill" >
-        <h2 class="heading">Coding <span>Skills</span></h2>
-        <div class="skills-row">
-            <div class="skills-column">
-
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>HTML <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>CSS <span>70%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Javascript <span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3>React <span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+                </div>
+            </div>
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"> </div>
+                    <div class="timeline-date">2011</div>
+                    <div class="timeline-content">
+                        <h4>College, Gateway College Bali</h4>
+                        <p>Cultural psychology & cross-cultural communication</p>
                     </div>
                 </div>
             </div>
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020-2024</div>
+                    <div class="timeline-content">
+                        <h4>Higher Vocational College, Noroff School of technology and digital media</h4>
+                        <p>Frontend development</p>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <section class="technical" id="skills">
+        <div class="skill-box">
+            <div class="technical-icon">
+                <i class='bx bxs-paint-roll'></i>
+            </div>
+            <h5>Design</h5>
+            <p>To me it's important that the design ensures a seamless user experience, simplicity an clarity. I aim to
+                create
+                intuitive interfaces that guide users effortlessly.</p>
+            <p>By focusing on clean design and user-centric principles, I
+                ensure that every project is both visually appealing and easy to navigate.</p>
+            <h6>Design Tools</h6>
+            <ul>
+                <li>Adobe XD</li>
+                <li>Canva</li>
+                <li>Figma</li>
+                <li>Sketch</li>
+            </ul>
+        </div>
+        <div class="skill-box">
+            <div class="technical-icon">
+                <i class='bx bx-code-alt'></i>
+            </div>
+            <h5>Frontend Development</h5>
+            <p>In my development work, I utilize a range of tools and technologies to streamline the process and enhance
+                efficiency.</p>
+            <p>This includes frameworks like Bootstrap and React for frontend development, version control with GitHub,
+                hosting on
+                Netlify, styling with SASS, and code editing with VS Code.</p>
+            <h6>Dev Stack</h6>
+            <ul>
+                <li>Bootstrap</li>
+                <li>CSS</li>
+                <li>Github</li>
+                <li>HTML</li>
+                <li>Netlify</li>
+                <li>React</li>
+                <li>SASS</li>
+                <li>VS Code</li>
+            </ul>
         </div>
     </section>
     <div class="project-text" id="projects">
@@ -99,16 +144,18 @@
     <div class="card-container">
         <div class="card">
             <div class="face front">
-                <img src="images/sp2 new.png" alt="Semester project">
+                <img src="images/Semester Project 2 auction.png" alt="Semester project">
             </div>
             <div class="face back">
                 <h3>Semester Project</h3>
-                <p>An auction website where users can add items to be bid on and bid on items other users have put up for auction.</p>
+                <p>An auction website where users can add items to be bid on and bid on items other users have put up
+                    for auction.</p>
                 <div class="card-btn">
-                    <a href="#"><button class="btn-detail">Github</button></a>
-                    <a href="#"><button class="btn-detail">Live page</button></a>
+                    <a href="https://github.com/Emii91/semester-project2.git"><button
+                            class="btn-detail">Github</button></a>
+                    <a href="https://auctioneer-sp-2.netlify.app/index.html"><button class="btn-detail">Live
+                            page</button></a>
                 </div>
-
                 <div class="link">
                     <a href="semester.html">Read more</a>
                 </div>
@@ -122,8 +169,9 @@
                 <h3>Javascript Framwork</h3>
                 <p>ON this project we were fousing on our knowledge of React, and had to build an eCom store.</p>
                 <div class="card-btn">
-                    <a href="#"><button class="btn-detail">Github</button></a>
-                    <a href="#"><button class="btn-detail">Live page</button></a>
+                    <a href="https://github.com/Emii91/framework-ca.git"><button class="btn-detail">Github</button></a>
+                    <a href="https://jazzy-hummingbird-80fc7b.netlify.app/"><button class="btn-detail">Live
+                            page</button></a>
                 </div>
                 <div class="link">
                     <a href="jsframework.html">Read more</a>
@@ -139,10 +187,11 @@
                 <p>An existing Social Media company wants a brand new front end for their application. While they
                     have a list of required features, the design and user experience has not been specified.</p>
                 <div class="card-btn">
-                    <a href="#"><button class="btn-detail">Github</button></a>
-                    <a href="#"><button class="btn-detail">Live page</button></a>
+                    <a href="https://github.com/Noroff-FEU-Assignments/project-exam-2-Emii91.git"><button
+                            class="btn-detail">Github</button></a>
+                    <a href="https://brilliant-stroopwafel-b2f536.netlify.app/"><button class="btn-detail">Live
+                            page</button></a>
                 </div>
-
                 <div class="link">
                     <a href="exam.html">Read more</a>
                 </div>
