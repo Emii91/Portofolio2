@@ -93,7 +93,7 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 585px) {
   .skill-box {
     width: auto;
   }
@@ -103,9 +103,20 @@
   .type-text h2 {
     font-size: 20px;
   }
+  .content-box {
+    padding: 0;
+  }
+  .tab-box .tab-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .line {
+    top: 39px;
+    left: 0px;
+  }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   .timeline-date {
     font-size: 16px;
   }
@@ -128,6 +139,30 @@
     font-size: 16px;
   }
   .card .back .link {
+    font-size: 16px;
+  }
+  .container {
+    padding: 20px;
+  }
+
+  .tab-box {
+    flex-direction: column;
+  }
+
+  .tab-box .tab-btn {
+    width: 100%;
+    border-bottom: 1px solid rgba(229, 229, 229, 0.5);
+  }
+
+  .tab-box .tab-btn.active {
+    border-bottom: none;
+  }
+
+  .line {
+    display: none;
+  }
+  .tab-box .tab-btn {
+    padding: 15px;
     font-size: 16px;
   }
 }
